@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bank-container">
+    <h1>MyBank Dashboard</h1>
+    
+    <div class="user-inputs">
+      <input type="text" id="customerId" placeholder="Enter Customer ID" />
+      <input type="text" id="customerName" placeholder="Enter Customer Name" />
+      <input type="text" id="accountNo" placeholder="Enter Account Number" />
+      <input type="number" id="amount" placeholder="Enter Amount" />
+    </div>
+
+    <div class="buttons">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div class="result">
+      <h3 id="welcome"></h3>
+      <p>Current Balance: ₹<span id="balance">0</span></p>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
